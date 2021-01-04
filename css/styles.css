@@ -679,6 +679,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -686,18 +687,16 @@ img {
 .footer-social-icon {
   width: 20px;
   height: 20px;
+  fill: #fff;
 }
 
-.follow-us {
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-top: 6px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
 }
 
-.footer-social-icon {
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
   fill: #fff;
 }
 
@@ -709,9 +708,13 @@ img {
   cursor: pointer;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-color);
+.follow-us {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 /* ============= END FOOTER ===============*/
